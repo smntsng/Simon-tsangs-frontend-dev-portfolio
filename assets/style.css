@@ -13,5 +13,18 @@
 /* hero style */
 
 /* main content style */
+section .about-me .profile-image .personal-profile{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "aboutme profileimage ";
+}
+.about-me{
+    grid-area: aboutme;
+}
+.profile-image{
+    width: 33.3%;
+    grid-area: profileimage;
+}
 
 /* footer style  */
