@@ -27,4 +27,11 @@ section .about-me .profile-image .personal-profile{
     grid-area: profileimage;
 }
 
+.project-1 img{
+    
+    width: 50%;
+    margin: 5%;
+    
+}
+
 /* footer style  */
