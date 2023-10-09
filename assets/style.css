@@ -55,7 +55,6 @@ align-items: center;
 background-image: url(../assets/images/Banner.jpg);
 background-repeat: no-repeat;
 background-size: cover;
-background-color:  
 width: 100%;
   display: grid;
   min-height: 500px;
@@ -70,10 +69,9 @@ width: 100%;
 
 hero h1, h2{
     
-    color: #342E2C; 
-    background-color: transparent; 
+    color:#342E2C
     font-size: 70px;
-    vertical-align: middle;
+    background-color: transparent;
     
 }
 
@@ -85,7 +83,8 @@ hero h1, h2{
     grid-column-end: 3;
     margin-left: auto;
     margin-right: auto;
-    background-color: transparent; 
+    background-color: transparent;
+    
 } 
 
 
@@ -97,7 +96,7 @@ hero h1, h2{
     margin-left: auto;
     margin-right: auto;
     gap: 20px;
-    background-color: transparent;
+    
     
 }
 
@@ -156,6 +155,7 @@ hero h1, h2{
     color: #7A6855;
     float: right;
     font-size: 100px;
+    background-color: transparent;
    
 
     
@@ -172,8 +172,22 @@ hero h1, h2{
     grid-column-start: 3;
     grid-column-end: 4;
     background-color: #342E2C;
-    
+    color: #7A6855;
+    padding: 30px;
+    text-align: justify;
+    text-justify: inter-word;
 }
+
+#personal-profile p{
+    font-size: 150%;
+    background-color: transparent;
+    line-height: 1.5;
+}
+#personal-profile h3{
+    background-color: transparent;
+    font-size: 150%;
+}
+
 
 section .about-me .profile-image .personal-profile{
     display: grid;
@@ -190,11 +204,75 @@ section .about-me .profile-image .personal-profile{
     grid-area: profileimage;
 }
 
-.project-1 img{
-    
-    width: 50%;
-    margin: 5%;
-    
+#portfolioGrid {
+    margin: 0px 5%;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+  "project1 project1 project2 "
+  "project3 project4 project5"
+  "project6 project6 project7"
+  ;
 }
+#project2 {
+    grid-area: project2;
+    background-image: url(../assets/images/2.png);
+  
+  }
+
+#project1 {
+    grid-area: project1;
+    background-image: url(../assets/images/Marketing\ website.jpg);
+
+  
+  }
+#project3 {
+    grid-area: project3;
+    background-image: url(../assets/images/Beige\ Neutral\ Interior\ Design\ Landing\ Page\ Desktop\ Prototype.png);
+  
+  }
+#project4{
+    grid-area: project4;
+    background-image: url(../assets/images/Beige\ Neutral\ Interior\ Design\ Landing\ Page\ Desktop\ Prototype\ \(1\).png);
+  
+  }
+#project5 {
+    grid-area: project5;
+    background-image: url(../assets/images/Beige\ Neutral\ Interior\ Design\ Landing\ Page\ Desktop\ Prototype\ \(2\).png);
+  
+  }
+#project6 {
+    grid-area: project6;
+    background-image: url(../assets/images/Beige\ Neutral\ Interior\ Design\ Landing\ Page\ Desktop\ Prototype\ \(3\).png);
+  
+  }
+#project7 {
+    grid-area: project7;
+    background-image: url(../assets/images/Beige\ Neutral\ Interior\ Design\ Landing\ Page\ Desktop\ Prototype\ \(4\).png);
+  
+  }
+
+  .ProjectGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+
+  .heading {
+    
+    background-color: #7a6855e0;
+    padding: 15px;
+    height: 25px;
+    color: #342E2C;
+    font-size: 18px;
+    border-bottom: 5px solid #342E2C;
+  }
+
 
 /* footer style  */
