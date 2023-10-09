@@ -1,18 +1,180 @@
 /* global style */
 *{
     background-color: #7A6855;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
 }
 /* navigation style*/
+.logo-and-nav{
+    display: flex;
+    flex-direction: row;
+
+   
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+    align-items: center;
+    
+}
+
+nav a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #342E2C;  
+    font-size: larger;
+}
+.underline-on-hover:hover {
+    text-decoration: dashed;
+}
+
+
+
 
 /* logo style */
 .website-logo{
+   
+    margin: 30px;
     width: 150px;
 }
 
 
 /* hero style */
+hero{
+justify-content: center;
+align-items: center;
+background-image: url(../assets/images/Banner.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-color:  
+width: 100%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "banner-headline banner-headline banner-headline"
+  "banner-button banner-button banner-button";
+  
+  }
+
+hero h1, h2{
+    
+    color: #342E2C; 
+    background-color: transparent; 
+    font-size: 70px;
+    vertical-align: middle;
+    
+}
+
+
+
+#banner-headline{
+    grid-area: banner-headline;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent; 
+} 
+
+
+
+#banner-button{
+    grid-area: banner-button;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+    background-color: transparent;
+    
+}
+
+.Portfolio-button{
+    background-color: #7A6855;
+    border: solid 0.1px white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    border-radius: 4px;
+}
+
+.chat-to-me-button{
+    background-color: #342E2C;
+    border: solid 0.1px white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    border-radius: 4px;
+}
+
+
 
 /* main content style */
+
+.about-me-section{
+    display: grid;
+    column-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:  
+    "aboutme profileimage personalprofile"
+    "aboutme profileimage personalprofile";
+}
+
+#about-me{
+    grid-area: aboutme;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #342E2C;
+    padding: 30px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+    
+
+}
+.about-me h2{
+    display: flex;
+    color: #7A6855;
+    float: right;
+    font-size: 100px;
+   
+
+    
+}
+
+#profile-image{
+    grid-area: profileimage;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#personal-profile{
+    grid-area: personalprofile;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #342E2C;
+    
+}
+
 section .about-me .profile-image .personal-profile{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -23,7 +185,8 @@ section .about-me .profile-image .personal-profile{
     grid-area: aboutme;
 }
 .profile-image{
-    width: 33.3%;
+    width: 100%;
+    height: 100%;
     grid-area: profileimage;
 }
 
