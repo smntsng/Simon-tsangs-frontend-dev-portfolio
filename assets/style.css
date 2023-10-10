@@ -1,3 +1,6 @@
+/* Media Queries */
+
+
 /* global style */
 *{
     background-color: #92806A;
@@ -102,7 +105,7 @@ hero h1 span{
     grid-column-end: 3;
     margin-left: auto;
     margin-right: auto;
-    gap: 20px;
+    gap: 30px;
     background-color: transparent;
     
     
@@ -140,6 +143,7 @@ hero h1 span{
 /* main content style */
 
 .about-me-section{
+    margin bottom: 30px;
     display: grid;
     height: 80vh;
     column-gap: 0px;
@@ -147,7 +151,7 @@ hero h1 span{
     grid-template-rows: 1fr 1fr;
     grid-template-areas:  
     "aboutme profileimage personalprofile"
-    "aboutme profileimage personalprofile";
+    "stats profileimage personalprofile";
 }
 
 #about-me{
@@ -157,22 +161,56 @@ hero h1 span{
     background-color: #342E2C;
     padding: 30px;
     
-
-
-    
-    
-
 }
 .about-me h2{
     
     color: #7A6855;
-    float: right;
     font-size: 100px;
     background-color: transparent;
-    text-align: center;
-   
+    text-align: center;   
+}
+.stats h3, p{
+    background-color: #342E2C;
+    color: #92806A;
+}
+.container {
+    width: 100%;
+    background-color: #342e2c;
+    margin:;
+    border: solid 1px white;
 
-    
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+  
+  .html {width: 20%; background-color: #92806A;
+}
+
+  .css {width: 10%; background-color: #92806A;
+}
+
+  .js {width: 0%; background-color: #92806A;
+}
+  .php {width: 0%; background-color: #92806A;
+}
+
+.stats{
+    background-color: #342E2C;
+    padding: 30px;
+}
+
+#stats{
+    grid-area: stats;
+   grid-row-start: 2;
+   grid-column-end: 
+    grid-column-start: 1;
+    grid-column-end: 
+
 }
 
 #profile-image{
@@ -186,7 +224,7 @@ hero h1 span{
     grid-column-start: 3;
     grid-column-end: 4;
     background-color: #342E2C;
-    color: #7A6855;
+    color: #92806A;
     padding: 30px;
     text-align: justify;
     text-justify: inter-word;
@@ -198,17 +236,25 @@ hero h1 span{
     line-height: 1.5;
 }
 #personal-profile h3{
-    background-color: transparent;
+    background-color:  #92806A;
+    color: #342E2C;
     font-size: 150%;
+    width: 25%;
 }
 
-
-section .about-me .profile-image .personal-profile{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "aboutme profileimage ";
+main .chat-to-me-button{
+    background-color: #92806A;
+    border: solid 0.1px white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    border-radius: 4px;
+    cursor: pointer;
 }
+
 .about-me{
     grid-area: aboutme;
 }
@@ -219,63 +265,17 @@ section .about-me .profile-image .personal-profile{
 }
 
 
-  article{
-
-    display: grid;
-    height: 100vh;
-    column-gap: 0px;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr;
-    grid-template-areas:  
-    "latestprojecttitle latestproject latestproject";
-}
-#latest-project-title{
-    grid-area: latestprojecttitle;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    background-color: #342E2C;
-    padding: 30px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-
-
-    
-    
-
-}
-.latest-project-title h2{
-    
-    color: #7A6855;
-    float: right;
-    font-size: 100px;
-    background-color: transparent;
-    text-align: center;
-   
-
-    
-}
-
-#latest-project{
-    grid-area: latestproject;
-    background-image: url(../assets/images/Marketing\ website.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
 #portfolioGrid {
-    margin: 0px 5%;
-    min-height: 200px;
+
+    margin: 30px;
+    max-height: fit-content;
     display: grid;
     grid-template-rows: 400px 400px 400px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
   "project1 project1 project2 "
   "project3 project4 project5"
-  "project6 project6 project7"
-  ;
+  "project6 project6 project7";
 }
 #project2 {
     grid-area: project2;
@@ -327,10 +327,10 @@ section .about-me .profile-image .personal-profile{
 
   .heading {
     
-    background-color: #7a6855e0;
+    background-color: #342e2ce5;
     padding: 15px;
     height: 25px;
-    color: #342E2C;
+    color: #92806A;
     font-size: 18px;
     border-bottom: 5px solid #342E2C;
   }
