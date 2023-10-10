@@ -231,9 +231,11 @@ hero h1 span{
 }
 
 #personal-profile p{
-    font-size: 16px;
+    font-size: 25px;
     background-color: transparent;
     line-height: 1.5;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 #personal-profile h3{
     background-color:  #92806A;
@@ -266,17 +268,34 @@ main .chat-to-me-button{
 
 
 #portfolioGrid {
-
-    margin: 30px;
-    max-height: fit-content;
+   margin-top: 100px;
+    gap: 20px;
     display: grid;
-    grid-template-rows: 400px 400px 400px;
+    grid-template-rows: 200px 400px 400px 400px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
+  "portfolioheading portfolioheading portfolioheading"
   "project1 project1 project2 "
   "project3 project4 project5"
   "project6 project6 project7";
 }
+
+section h2{
+   color: #342E2C;
+   font-size: 100px;
+   
+    
+}
+
+#portfolioheading {
+    grid-area: portfolioheading;
+    text-align: center;  
+    display: flex;
+    justify-content: center; 
+    height: 230px;
+    
+  
+  }
 #project2 {
     grid-area: project2;
     background-image: url(../assets/images/2.png);
@@ -286,9 +305,8 @@ main .chat-to-me-button{
 #project1 {
     grid-area: project1;
     background-image: url(../assets/images/Marketing\ website.jpg);
+}
 
-  
-  }
 #project3 {
     grid-area: project3;
     background-image: url(../assets/images/Beige\ Neutral\ Interior\ Design\ Landing\ Page\ Desktop\ Prototype.png);
@@ -338,3 +356,50 @@ main .chat-to-me-button{
 
 
 /* footer style  */
+
+footer{
+height: 300px;
+display: grid;
+
+grid-template-rows: auto auto;
+grid-template-areas: 
+"footerlogo"
+"footernav";
+justify-content: center;
+
+
+
+}
+
+.footer-nav{
+    display: ;
+    font-size: large;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: space-evenly
+}
+
+#footer-nav{
+    grid-area: footernav;
+    grid-row-start: 2;
+    
+}
+#footer-logo{
+    grid-area:footerlogo;
+    grid-row-start: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    #about-me {
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "aboutme"
+         "profileimage" 
+         "personalprofile"
+        "stats"
+    }
+   
+    }
