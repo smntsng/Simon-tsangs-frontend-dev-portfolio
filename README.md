@@ -6,7 +6,7 @@ This working portfolio will showcase all the web development projects that I hav
 
  
 
-![alt text](assets/images/screenshot.png)
+![alt text](assets/images/screenshot.jpg)
 
 https://smntsng.github.io/Simon-tsangs-frontend-dev-portfolio/
 
