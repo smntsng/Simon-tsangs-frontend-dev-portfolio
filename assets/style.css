@@ -1,6 +1,6 @@
 /* global style */
 *{
-    background-color: #7A6855;
+    background-color: #92806A;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
@@ -12,10 +12,9 @@ body{
 .logo-and-nav{
     display: flex;
     flex-direction: row;
-
-   
-   justify-content: space-between;
-   align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
 }
 
 nav{
@@ -43,16 +42,18 @@ nav a{
 /* logo style */
 .website-logo{
    
-    margin: 30px;
-    width: 150px;
+    margin: 10px;
+    width: 100px;
 }
 
 
 /* hero style */
 hero{
+    padding: 50px;
 justify-content: center;
 align-items: center;
-background-image: url(../assets/images/Banner.jpg);
+text-align: center;
+background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.7)), url(../assets/images/banner-3-GIF.gif);
 background-repeat: no-repeat;
 background-size: cover;
 width: 100%;
@@ -67,12 +68,18 @@ width: 100%;
   
   }
 
-hero h1, h2{
+hero h1{
     
-    color:#342E2C
-    font-size: 70px;
+    color:#342E2C;
+    font-size: 5rem;
     background-color: transparent;
-    
+    letter-spacing: 3px;   
+
+}
+
+hero h1 span{
+    color: #7A6855;
+    background-color: transparent;
 }
 
 
@@ -96,6 +103,8 @@ hero h1, h2{
     margin-left: auto;
     margin-right: auto;
     gap: 20px;
+    background-color: transparent;
+    
     
     
 }
@@ -110,6 +119,7 @@ hero h1, h2{
     display: inline-block;
     font-size: 16px; 
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .chat-to-me-button{
@@ -122,6 +132,7 @@ hero h1, h2{
     display: inline-block;
     font-size: 16px; 
     border-radius: 4px;
+    cursor: pointer;
 }
 
 
@@ -130,9 +141,10 @@ hero h1, h2{
 
 .about-me-section{
     display: grid;
+    height: 80vh;
     column-gap: 0px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:  
     "aboutme profileimage personalprofile"
     "aboutme profileimage personalprofile";
@@ -144,18 +156,20 @@ hero h1, h2{
     grid-column-end: 2;
     background-color: #342E2C;
     padding: 30px;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    
+
+
     
     
 
 }
 .about-me h2{
-    display: flex;
+    
     color: #7A6855;
     float: right;
     font-size: 100px;
     background-color: transparent;
+    text-align: center;
    
 
     
@@ -179,7 +193,7 @@ hero h1, h2{
 }
 
 #personal-profile p{
-    font-size: 150%;
+    font-size: 16px;
     background-color: transparent;
     line-height: 1.5;
 }
@@ -202,6 +216,53 @@ section .about-me .profile-image .personal-profile{
     width: 100%;
     height: 100%;
     grid-area: profileimage;
+}
+
+
+  article{
+
+    display: grid;
+    height: 100vh;
+    column-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas:  
+    "latestprojecttitle latestproject latestproject";
+}
+#latest-project-title{
+    grid-area: latestprojecttitle;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #342E2C;
+    padding: 30px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+
+    
+    
+
+}
+.latest-project-title h2{
+    
+    color: #7A6855;
+    float: right;
+    font-size: 100px;
+    background-color: transparent;
+    text-align: center;
+   
+
+    
+}
+
+#latest-project{
+    grid-area: latestproject;
+    background-image: url(../assets/images/Marketing\ website.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
 #portfolioGrid {
@@ -273,6 +334,7 @@ section .about-me .profile-image .personal-profile{
     font-size: 18px;
     border-bottom: 5px solid #342E2C;
   }
+
 
 
 /* footer style  */
